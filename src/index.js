@@ -26,8 +26,8 @@ const VLazyImageComponent = {
     }
   },
   render(h) {
-    return h("img", {
-      attrs: { src: this.srcImage, srcset: this.srcsetImage },
+    return h("div", {
+      attrs: { 'background-image': this.srcImage },
       class: {
         "v-lazy-image": true,
         "v-lazy-image-loaded": this.loaded
